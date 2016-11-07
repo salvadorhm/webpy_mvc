@@ -1,0 +1,17 @@
+$def with(records)
+<html>
+    <head>
+    </head>
+    <body>
+        <p><a href="/">Back</a>
+        <table>
+            <th>Nombre</th>
+            <th>Telefono</th>
+            $for row in records:
+                <tr>
+                    <td>$row.nombre</td>
+                    <td>$row.telefono</td>
+                </tr>
+        </table>
+    </body>
+</html>

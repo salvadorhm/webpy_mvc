@@ -2,7 +2,7 @@ CREATE DATABASE 'agenda';
 
 USE 'agenda';
 
-CREATE TABLE 'contactos'(
+CREATE TABLE contactos(
     id int auto_increment primary key,
     nombre varchar(20),
     telefono varchar(10),

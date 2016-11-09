@@ -9,7 +9,7 @@ CREATE TABLE contactos (
   nombre varchar(50) COLLATE latin1_spanish_ci NOT NULL,
   telefono varchar(10) COLLATE latin1_spanish_ci NOT NULL,
   email varchar(50) COLLATE latin1_spanish_ci NOT NULL,
-  PRIMARY KEY (idContacto)
+  PRIMARY KEY (id_contacto)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
 
 INSERT INTO `contactos` VALUES (1,'Renata','7757512345','renata@correo.com');

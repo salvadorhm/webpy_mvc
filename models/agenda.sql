@@ -12,5 +12,6 @@ CREATE TABLE contactos (
   PRIMARY KEY (id_contacto)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
 
-INSERT INTO `contactos` VALUES (1,'Renata','7757512345','renata@correo.com');
-INSERT INTO `contactos` VALUES (2,'Salvador','7757523456','salvador@correo.com');
+INSERT INTO contactos (nombre, telefono, email) VALUES ('Dejah Thoris', '7757512345', 'dejah@barson.com');
+INSERT INTO contactos (nombre, telefono, email) VALUES ('Jhon Carter', '7757523456', 'jhon@tierra.com');
+INSERT INTO contactos (nombre, telefono, email) VALUES ('Carthoris', '757578788', 'carthoris@correobarson.com');

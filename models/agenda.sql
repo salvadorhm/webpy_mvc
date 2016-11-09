@@ -1,14 +1,16 @@
-CREATE DATABASE 'agenda';
+CREATE DATABASE agenda;
 
-USE 'agenda';
+USE agenda;
 
-CREATE TABLE contactos(
-    id int auto_increment primary key,
-    nombre varchar(20),
-    telefono varchar(10),
-    created timestamp default "now()",
-    done boolean default 'f'
-);
+DROP TABLE IF EXISTS contactos;
 
-INSERT INTO 'contactos' (nombre,telefono) VALUES ('Dejha Thoris','123456');
-INSERT INTO 'contactos' (nombre,telefono) VALUES ('Jhon Carter','7879456');
+CREATE TABLE contactos (
+  id_contacto int(11) NOT NULL AUTO_INCREMENT,
+  nombre varchar(50) COLLATE latin1_spanish_ci NOT NULL,
+  telefono varchar(10) COLLATE latin1_spanish_ci NOT NULL,
+  email varchar(50) COLLATE latin1_spanish_ci NOT NULL,
+  PRIMARY KEY (idContacto)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_spanish_ci;
+
+INSERT INTO `contactos` VALUES (1,'Renata','7757512345','renata@correo.com');
+INSERT INTO `contactos` VALUES (2,'Salvador','7757523456','salvador@correo.com');

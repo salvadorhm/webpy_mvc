@@ -1,0 +1,28 @@
+$def with(contactos, result)
+<h1>Datos</h1>
+<form name="main" method="post" >
+     $if not contactos.valid: <p class="error">Verifica los datos:</p>
+    $for input in contactos.inputs:
+        <div class="form-group">
+                <label>$:input.description</label>
+                $:input.render()
+        </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-default">Guardar</button>  
+    </div>
+</form>
+
+
+<table>
+    <th>ID</th>
+    <th>Nombre</th>
+    <th>Telefono</th>
+    <th>Email</th>
+    $for row in result:
+        <tr>
+            <td><a href="/view/$row.id_contacto">$row.id_contacto</a></td>
+            <td>$row.nombre</td>
+            <td>$row.telefono</td>
+            <td>$row.email</td>
+        </tr>
+</table>
